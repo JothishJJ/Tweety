@@ -5,7 +5,9 @@ function App() {
     return (
         <>
             <h1>Hello There!</h1>
-            <Link to="/login">Hello there</Link>
+            <button className="btn btn-primary">
+                <Link to="/login">Login</Link>
+            </button>
         </>
     );
 }

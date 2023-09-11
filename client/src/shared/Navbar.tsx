@@ -15,41 +15,45 @@ export function Navbar() {
                     </div>
                     <div className="flex-none gap-2">
                         {signedIn && (
-                            <div className="form-control">
-                                <input
-                                    type="text"
-                                    placeholder="Search"
-                                    className="input input-bordered w-24 md:w-auto"
-                                />
-                            </div>
-                        )}
-                        <div className="dropdown dropdown-end">
-                            <label
-                                tabIndex={0}
-                                className="btn btn-ghost btn-circle avatar"
-                            >
-                                <div className="w-10 rounded-full">
-                                    {/* Profile image  */}
+                            <>
+                                <div className="form-control">
+                                    <input
+                                        type="text"
+                                        placeholder="Search"
+                                        className="input input-bordered w-24 md:w-auto"
+                                    />
                                 </div>
-                            </label>
-                            <ul
-                                tabIndex={0}
-                                className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
-                            >
-                                <li>
-                                    <a>Login</a>
-                                </li>
-                                <li>
-                                    <a className="justify-between">
-                                        Profile
-                                        <span className="badge">New</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>Logout</a>
-                                </li>
-                            </ul>
-                        </div>
+                                <div className="dropdown dropdown-end">
+                                    <label
+                                        tabIndex={0}
+                                        className="btn btn-ghost btn-circle avatar"
+                                    >
+                                        <div className="w-10 rounded-full">
+                                            {/* Profile image  */}
+                                        </div>
+                                    </label>
+                                    <ul
+                                        tabIndex={0}
+                                        className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+                                    >
+                                        <li>
+                                            <a>Login</a>
+                                        </li>
+                                        <li>
+                                            <a className="justify-between">
+                                                Profile
+                                                <span className="badge">
+                                                    New
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>Logout</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </>
+                        )}
                     </div>
                 </div>
                 <hr className="border-t-2" />

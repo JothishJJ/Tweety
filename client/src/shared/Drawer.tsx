@@ -11,11 +11,14 @@ export function Drawer(props: any) {
                     type="checkbox"
                     className="drawer-toggle"
                 />
-                <div className="drawer-content p-8">
+                <div className="drawer-content p-8 ml-72 lg:w-[60rem]">
                     {/* Page content here */}
                     {props.children}
                 </div>
-                <div className="drawer-side">
+                <div
+                    className="drawer-side pt-16"
+                    style={{ position: "fixed" }}
+                >
                     <ul className="menu p-4 w-72 min-h-full bg-base-200 text-base-content text-center">
                         {/* Sidebar content here */}
                         <li>
@@ -23,6 +26,9 @@ export function Drawer(props: any) {
                         </li>
                         <li>
                             <a href="/profile">Profile</a>
+                        </li>
+                        <li>
+                            <a href="/notification">Notifications</a>
                         </li>
                         {signedIn ? (
                             <li>
@@ -33,6 +39,12 @@ export function Drawer(props: any) {
                                 <a href="/login">Login</a>
                             </li>
                         )}
+                    </ul>
+                </div>
+                <div className="hidden lg:block fixed right-0 top-0 bottom-0 pt-16">
+                    <ul className="menu p-4 w-72 min-h-full bg-base-200 text-base-content text-center">
+                        {/* Notifications */}
+                        Notifications
                     </ul>
                 </div>
             </div>

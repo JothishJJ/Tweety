@@ -1,10 +1,10 @@
 import "./App.css";
+import NewTweet from "./NewTweet";
 
 function App() {
     return (
         <>
-            <h1>Hello There!</h1>
-            <button className="btn btn-primary">Tweet</button>
+            <NewTweet />
         </>
     );
 }

@@ -1,16 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
-import { Navbar } from "./shared/Navbar";
 
 // Global Styles
 import "./index.css";
 import { router } from "./routePaths";
+import { Drawer } from "./shared/Drawer";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <React.StrictMode>
-        <Navbar />
-        <RouterProvider router={router} />
+        <Drawer>
+            <RouterProvider router={router} />
+        </Drawer>
     </React.StrictMode>
 );
 

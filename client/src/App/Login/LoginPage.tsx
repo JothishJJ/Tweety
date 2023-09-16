@@ -1,12 +1,10 @@
-import { Link } from "react-router-dom";
+import Forms from "./Forms";
 
 export function LoginPage() {
     return (
         <>
-            <h1>Login Page</h1>
-            <button className="btn btn-primary">
-                <Link to="/">Home</Link>
-            </button>
+            <h1 className="text-center">Login</h1>
+            <Forms />
         </>
     );
 }

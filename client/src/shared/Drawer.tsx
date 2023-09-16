@@ -11,7 +11,7 @@ export function Drawer(props: any) {
                     type="checkbox"
                     className="drawer-toggle"
                 />
-                <div className="drawer-content p-8 ml-72 lg:w-[60rem]">
+                <div className="drawer-content p-8 lg:ml-72 lg:w-[60rem]">
                     {/* Page content here */}
                     {props.children}
                 </div>
